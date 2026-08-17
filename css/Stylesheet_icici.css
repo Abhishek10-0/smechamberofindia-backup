@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+body {font-family: "Mulish Semibold", Arial, sans-serif;  }
+.microtext{font-size:32px; color: #ec6726; font-weight: bold;font-family: "Mulish, Semibold", Arial, sans-serif;line-height: 41px;}
+.soltxt{font-size: 16px; color: #ec6625;font-family: "Mulish, Semibold", Arial, sans-serif; font-weight: bold;}
+.soltxt a{color: #11487c; text-decoration: none;}
+.solh1{font-size: 25px; color: #002f5b; font-family: "Mulish, Semibold", Arial, sans-serif; font-weight: bold;}
+.solh2{font-size: 25px; color: #ffffff; font-family: "Mulish, Semibold", Arial, sans-serif; border:2px solid #e95c24; border-radius: 25px; padding: 10px 0px; background: #e95c24;}
+.solh2 a{color: #ffffff; text-decoration: none; font-weight: bold;}
+.kwmore{background-color: #f68121; border-color:#f68121; border-radius:0px; font-size: 18px; padding: 5px 15px;}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary{background-color: #f68121; border-color:#f68121;}
+.titleh1{color: #01305c; font-size: 30px; font-weight: bold; font-family: "Mulish, Semibold", Arial, sans-serif;}
+/*.cardleft{padding-right: 0%;padding-left:0%;}*/
+.cardimg{width: 100%; border-radius: 0px;}
+.cardtxt{font-size: 18px;}
+.cardmain{border:0px; border-bottom: 0px dotted #8a8b8f; border-radius: 0px;}
+.cardmain1{border:0px; border-radius: 0px;}
+.prodbg{background-color: #f8f6f7;}
+.prodhd{font-size: 35px; color: #930801; font-weight: bold; font-family: "Mulish, Semibold", Arial, sans-serif;}
+.cardmain-prd{border:0px; border-radius: 0px; background-color: #f8f6f7;}
+.cardimg-prd{width: 100%; border-radius: 0px;}
+.newshd{color: #00315c; font-size: 32px; font-weight: bold;display: inline-flex; width: 55%; font-family: "Mulish, Semibold", Arial, sans-serif;}
+.cardmain-prdn{border:0px; border-radius: 0px;}
+.newshd1{color: #00315c; font-size: 32px; font-weight: bold; font-family: "Mulish, Semibold", Arial, sans-serif;}
+.leadertxt{font-size:18px; font-weight: bold; font-family: "Mulish, Semibold", Arial, sans-serif;}
+.prodbg1{background-color: #ec6726;}
+.prodhd1{font-size: 35px; color:#ffffff; font-weight: bold;}
+.cardmain-stories{border:0px; border-radius: 0px; background-color: #ec6726;}
+.custstories1{color: #ffffff;font-size: 32px;font-weight: bold; display: inline-flex; width: 44%;vertical-align: bottom;}
+.footer{background-color: #01305c; font-size:13px; color: #ffffff;}
+.soc-icons{padding:0 2px;margin: 5px 0px;display: inline-flex;}
+.soc-icons:hover{opacity: 0.7;}
+.carousel-indicators [data-bs-target]{width: 15px; height: 15px; border-radius: 50%!important; background-color: #ec6726;}
+.indicators{top:30%; left: 56%; margin-right: 0%;}
+.indicators1{top: 29%; margin-right: 0%; margin-left: 0; right: 71%; left: 0;  }  
+.carousel-control-prev{left: -9%;top: 15%;}
+.carousel-control-next {right: 16%;top: 15%;left: 94%;}
+.contact-txt{color: #11487c; font-size: 17px;}
+.cardimg-prd1{width: 65%;
+    border-radius: 0px;}
+
+
+@media screen and (max-width:480px){	
+	.cardimg{width: 100%;}
+	.cardmain2{border-bottom: 1px dotted #8a8b8f;}
+	.newshd{width: 40%;}
+	.newshd1{width: 78%!important; font-size: 25px;}
+	.cardleft{padding-left: 7%;}	
+	.indicators1{top: 26%; margin-right: 0%; margin-left: 0; right: 69%; left: 0;}
+	.indicators{top: 27%; left: 50%;}
+	.custstories1{font-size: 26px; width: 75%;}
+	.microtext {font-size: 20px!important; line-height: 24px;text-align: center;}
+	.solh2{font-size: 24px!important;}
+	.solh1{font-size: 18px; margin-top:15px;}
+}
+
+
+@media screen and (max-width:575.9px){
+	.cardmain2{border-bottom: 1px dotted #8a8b8f;}
+	.titleh1{font-size: 30px!important;}
+	.prodhd{font-size: 29px!important;}
+	.prodhd1{font-size: 29px!important;}
+	.newshd1{width: 70%; font-size: 21px!important;}
+	.cardleft{padding-right: 7%; padding-left: 7%;}
+	.microtext{font-size: 25px;}
+	.solh2{font-size: 24px;}
+	.soc-icons{width: 17%;}
+}
+@media screen and (max-width:992px){
+	.titleh1{font-size: 22px;}
+	.cardimg{width: 100%;}
+	.newshd1{width: 80%; font-size: 22px!important;}
+	.solh2{font-size: 30px;}
+	.soltxt{font-size: 18px;}
+	.microtext {font-size: 31px;}
+	.solh1{margin-top:15px;}
+	.newshd{font-size: 22px;}
+}

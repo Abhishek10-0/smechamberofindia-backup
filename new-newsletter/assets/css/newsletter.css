@@ -1,0 +1,231 @@
+:root {
+  --blue: #29688a;
+  --ink: #182734;
+  --soft: #f4f8fa;
+  --line: #d7e1e7;
+  --danger: #9b2c2c;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #eaf3f6, #f8fbfc);
+  font:
+    16px/1.5 Arial,
+    sans-serif;
+  color: var(--ink);
+}
+.newsletter-shell {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 18px;
+}
+.newsletter-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 38px #1d40521c;
+  padding: 38px;
+}
+.newsletter-heading {
+  text-align: center;
+}
+.eyebrow {
+  color: var(--blue);
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.newsletter-heading h1 {
+  margin: 6px 0;
+  font-size: 32px;
+}
+.progress {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  gap: 7px;
+}
+.progress li {
+  flex: 1;
+  background: #e8eef1;
+  border-radius: 20px;
+  padding: 8px;
+  text-align: center;
+  font-size: 13px;
+  color: #5f717d;
+}
+.progress .active {
+  background: var(--blue);
+  color: #fff;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.form-grid .full {
+  grid-column: 1/-1;
+}
+label {
+  font-weight: 600;
+  display: block;
+}
+label span,
+label b {
+  color: var(--danger);
+}
+small {
+  font-weight: normal;
+}
+input,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 11px;
+  font: inherit;
+}
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.benefits {
+  background: var(--soft);
+  padding: 18px 22px;
+  border-radius: 10px;
+  margin: 24px 0;
+}
+.benefits h2,
+.step h2 {
+  margin-top: 0;
+  font-size: 21px;
+}
+.benefits ul {
+  margin-bottom: 0;
+  padding-left: 21px;
+}
+.consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-weight: normal;
+}
+.consent input {
+  width: auto;
+  margin-top: 4px;
+}
+.primary {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  background: var(--blue);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.primary:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.notice {
+  padding: 12px 15px;
+  border-radius: 8px;
+  background: #fff3cd;
+  color: #664d03;
+  margin: 18px 0;
+}
+.notice.error {
+  background: #fde8e8;
+  color: #842029;
+}
+.plans {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.plan {
+  cursor: pointer;
+}
+.plan input {
+  position: absolute;
+  opacity: 0;
+}
+.plan span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  padding: 22px;
+}
+.plan input:checked + span {
+  border-color: var(--blue);
+  background: #edf7fb;
+}
+.plan strong {
+  font-size: 20px;
+  color: var(--blue);
+}
+.thank-you {
+  padding: 10px 0;
+}
+@media (max-width: 620px) {
+  .newsletter-shell {
+    margin: 16px auto;
+  }
+  .newsletter-card {
+    padding: 24px 18px;
+  }
+  .form-grid,
+  .plans {
+    grid-template-columns: 1fr;
+  }
+  .progress {
+    flex-wrap: wrap;
+  }
+  .progress li {
+    min-width: 45%;
+  }
+  .newsletter-heading h1 {
+    font-size: 27px;
+  }
+}
+
+
+.newsletter-logo{
+    width:300px;
+    height:auto;
+    display:block;
+    margin:0 auto 20px;
+}
+
+.subscription-note{
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.subscription-note p{
+    margin: 0 0 10px;
+}
+
+.subscription-note a{
+    color: #0b72b9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.subscription-note a:hover{
+    text-decoration: underline;
+}

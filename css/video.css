@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+}
+
+/*body {
+    font-family: arial;
+    font-size: 62.5%;
+    font-weight: normal;
+}
+
+*/
+.clearfix {
+    clear: both;
+}
+
+/*li {
+    list-style-type: none;
+}*/
+/*
+a {
+    text-decoration: none;
+}*/
+
+/*textarea {
+    resize: none;
+}*/
+
+img {
+    max-width: 100%;
+}
+
+/*.wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    padding: 20px
+}*/
+
+.guideBox {
+    background: #f1f1f1;
+    box-shadow: 2px 2px 3px 0 #929292;
+    float: left;
+    margin-bottom: 5%;
+    padding: 2.5%;
+    width: 95%;
+}
+
+.guideBox .videoThum {
+    float: left;
+    margin-right: 15px;
+    width: 250px;
+}
+
+.guideBox .videoThum a {
+    background: #ccc;
+    border: 5px solid #fff;
+    display: block;
+    height: 170px;
+    width: 240px;
+}
+
+.guideBox .videoInfo {
+    float: left;
+    width: 55%;
+}
+
+.guideBox .videoInfo h2 {
+/*    font-size: 2.5em;
+    font-weight: normal;*/
+}
+
+.guideBox .videoInfo p {
+    clear: both;
+    color: #666;
+    float: left;
+/*    font-family: arial;
+    font-size: 1.5em;*/
+    margin: 2% 0;
+    padding: 0 0 8px;
+    width: 100%;
+}
+
+
+/**/
+
+.popup {
+    background: #fff;
+    border-radius: 5px;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 800px;
+    z-index: 10;
+}
+
+.popup a.close {
+    z-index: 999;
+    background: #f60;
+    color: #fff;
+    display: block;
+/*    font-size: 20px;*/
+    padding: 5px;
+    position: absolute;
+    right: -5px;
+    top: -15px;
+}
+
+.video-container {
+    float: left;
+    height: 360px;
+    left: 0;
+    padding-bottom: 5%;
+    padding-top: 25px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.video-container .iframe {
+    float: left;
+    width: 100%;
+}
+
+.video-container .iframe iframe {
+    float: left;
+    height: 360px;
+    width: 100%;
+}
+
+.video-container .iframe h2 {
+    font-size: 2em;
+    color: #F60;
+    padding-bottom: 10px
+}
+
+.overlaybg {
+    background: #000;
+    display: none;
+    height: 100%;
+    opacity: 0.7;
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+}

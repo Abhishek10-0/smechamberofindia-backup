@@ -1,0 +1,485 @@
+.panel-form {
+    border: 1px solid #cecece;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.form {
+    margin: 15px 0;
+}
+input, select, textarea {
+    font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+.form .field {
+    background: #e1dfe0;
+    border-bottom: 1px solid #fff;
+    overflow: auto;
+}
+.form .field-break {
+    background: #e1dfe0;
+    height: 10px;
+    overflow: hidden;
+}
+.form .field-light {
+    background: #edebec;
+}
+.form .field .control-label {
+    color: #5c5c5c;
+    width: 179px;
+    padding: 10px 10px 10px 15px;
+    float: left;
+}
+.form .field .control-label {
+    color: #5c5c5c;
+    width: 179px;
+    padding: 10px 10px 10px 15px;
+    float: left;
+}
+
+.form .field .control-label .control-label-help {
+    font-size: 80%;
+    margin-top: 6px;
+    line-height: 1.5em;
+}
+.form .field .control-label-long {
+    width: 499px;
+}
+.form .field .control-text {
+    background: #edebec;
+    width: 520px;
+    padding: 10px;
+    float: left;
+}
+.form .field .controls {
+    padding: 4px 0;
+    float: left;
+    /*                width: 540px;*/
+    width: 559px;
+}
+.form .field .controls-row {
+    padding: 4px 0 3px 4px;
+}
+
+.form .field .controls-row .clear {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+.form .field .controls-row input,
+.form .field .controls-row select {
+    float: left;
+    margin-right: 4px;
+}
+
+.form .field .controls-short {
+    width: 220px;
+}
+.form .field .text,
+.form .field .select {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6b6b6b #fff #fff #a1a1a1;
+    padding: 5px;
+    width: 524px;
+    margin-right: 4px;
+    float: left;
+}
+.form .field .select {
+    padding: 4px 5px;
+    width: 536px;
+}
+.form .field .controls .controls-help {
+    font-size: 80%;
+    padding: 6px 10px 2px 0;
+    line-height: 1.5em;
+    clear: left;
+}
+.form .field .controls .control-ul {
+    margin: 0;
+    padding: 6px 0 0;
+    list-style-type: none;
+}
+.form .field .controls .control-ul li {
+    margin: 0;
+    padding: 0 0 6px;
+}
+.form .field .controls .control-ul label {
+    margin-left: 10px;
+}
+.form .field .controls a.btn-add-another:link, .form .field .controls a.btn-add-another:visited {
+    float: right;
+    margin: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.form .field .controls-short .text {
+    width: 204px;
+}
+.form .field .controls .rb-container {
+    padding: 6px 20px 6px 0;
+    float: left;
+}
+.form .field .controls .rb-container label {
+    color: #5c5c5c;
+}
+.form1 .field {
+    background: #e1dfe0;
+    border-bottom: 1px solid #fff;
+    overflow: auto;
+}
+.form1 .field-break {
+    background: #e1dfe0;
+    height: 10px;
+    overflow: hidden;
+}
+.form1 .field-light {
+    background: #edebec;
+}
+
+.form1 .field .control-label {
+    color: #5c5c5c;
+    width: 479px;
+    padding: 10px 10px 10px 15px;
+    float: left;
+}
+
+.form1 .field .control-label .control-label-help {
+    font-size: 80%;
+    margin-top: 6px;
+    line-height: 1.5em;
+}
+.form1 .field .control-label-long {
+    width: 499px;
+}
+.form1 .field .control-text {
+    background: #edebec;
+    width: 520px;
+    padding: 10px;
+    float: left;
+}
+.form1 .field .controls {
+    padding: 4px 0;
+    float: left;
+    /*                width: 540px;*/
+    width: 559px;
+}
+.form1 .field .controls-row {
+    padding: 4px 0 3px 4px;
+}
+
+.form1 .field .controls-row .clear {
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+}
+
+.form1 .field .controls-row input,
+.form1 .field .controls-row select {
+    float: left;
+    margin-right: 4px;
+}
+
+.form1 .field .controls-short {
+    width: 220px;
+}
+.form1 .field .text,
+.form1 .field .select {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6b6b6b #fff #fff #a1a1a1;
+    padding: 5px;
+    width: 524px;
+    margin-right: 4px;
+    float: left;
+}
+.form1 .field .select {
+    padding: 4px 5px;
+    width: 536px;
+}
+.form1 .field .controls .controls-help {
+    font-size: 80%;
+    padding: 6px 10px 2px 0;
+    line-height: 1.5em;
+    clear: left;
+}
+.form1 .field .controls .control-ul {
+    margin: 0;
+    padding: 6px 0 0;
+    list-style-type: none;
+}
+.form1 .field .controls .control-ul li {
+    margin: 0;
+    padding: 0 0 6px;
+}
+.form1 .field .controls .control-ul label {
+    margin-left: 10px;
+}
+.form1 .field .controls a.btn-add-another:link, .form .field .controls a.btn-add-another:visited {
+    float: right;
+    margin: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.form1 .field .controls-short .text {
+    width: 204px;
+}
+.form1 .field .controls .rb-container {
+    padding: 6px 20px 6px 0;
+    float: left;
+}
+.form1 .field .controls .rb-container label {
+    color: #5c5c5c;
+}
+.btn-continue {
+    background: #00769c;
+    border-top: 0px outset #439ab6;
+    border-right: 2px outset #005f7e;
+    border-bottom: 0px outset #00516b;
+    border-left: 2px outset #2489aa;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    float: right;
+    padding: 9px;
+    text-transform: uppercase;
+}
+.btn-continue span {
+}
+
+.buttn-form {
+    background: #00769c;
+    color: #fff;
+    height: 2.5em;
+    width: 10em;
+
+}
+
+.form .field .control-list {
+    border-left: 1px solid #fff;
+    /*padding: 0px;*/
+    width: 539px;
+}
+.control-list ul {
+    margin: 0;
+    padding: 0;
+}
+.control-list ul ul {
+    padding: 0 0 0 20px;
+}
+.control-list ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.control-list ul li a {
+    /*font-size: 90%;*/
+    display: block;
+    padding: 6px 12px 4px;
+}
+.control-list ul li.disc a span.checkbox,
+.control-list ul li.disc a.selected span.checkbox {
+    background: url(../img/sprite-master.png) no-repeat -30px -66px;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.control-list ul li.disc a.selected span.checkbox {
+    background: url(../img/sprite-master.png) no-repeat -12px -66px;
+}
+.control-list ul li a span.checkbox,
+.control-list ul li.disc li a span.checkbox {
+    background: url(../img/sprite-master.png) no-repeat -1px -398px;
+    width: 10px;
+    height: 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.control-list ul li a.selected span.checkbox,
+.control-list ul li.disc li a.selected span.checkbox {
+    background: url(../img/sprite-master.png) no-repeat -12px -398px;
+}
+.control-list ul ul li {
+    border-bottom: 0px;
+}
+p.infoText {
+    margin: 15px 0;
+    font-size: 0.8em;
+}
+/*.form .field .controls-radio {
+    padding-bottom: 0px;
+}
+.form .field .controls-radio td {
+    padding-bottom: 6px;
+}
+    .form .field .controls-radio td label {
+        color: #5C5C5C;
+        position: relative;
+        margin-left: 6px;
+        top: -1px;
+    }*/
+
+.form-alert {
+    padding: 15px 20px;
+    margin: 15px 0;
+    color: #C09853;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #FCF8E3;
+    /*border: 1px solid #FBEED5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;*/
+}
+.form-alert ul {
+    margin-bottom: 4px;
+}
+.form-alert-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border-color: #EED3D7;
+}
+.form-alert-success {
+    color: #468847;
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+}
+
+.modal-discipline-list-control {
+}
+.modal-discipline-list-control .modal-header h1 {
+    font-size: 1.8em;
+}
+.modal-discipline-list-control .modal-body {
+    font-size: 90%;
+    color: #5C5C5C;
+}
+.modal-discipline-list-control .modal-body .form .field {
+    background: #fff;
+}
+.modal-discipline-list-control .modal-body .form .field .control-label {
+    width: 200px;
+    margin-left: 0;
+}
+.modal-discipline-list-control .modal-body .form .field .controls {
+    width: 300px;
+}
+.modal-discipline-list-control .modal-body .form .field .controls .text {
+    width: 249px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.modal-discipline-list-control .modal-body .form .field .controls .select {
+    width: 260px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.modal-discipline-list-control .modal-footer .form .btn-continue {
+    border: 0;
+    background: #00769C;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    padding: 10px 30px;
+}
+
+.nicEdit-main {
+    background: #fff !important;
+    outline: none !important;
+}
+
+/*.form-publishing .field .control-label {
+    width: 360px;
+}
+.form-publishing .field .controls {
+    width: 300px;
+}
+    .form-publishing .field .controls .text {
+        width: 310px;
+    }
+
+.form-organisers .field .control-label {
+    width: 450px;
+}
+.form-organisers .field .controls {
+    width: 160px;
+}
+    .form-organisers .field .controls .text {
+        width: 220px;
+    }*/
+
+
+.promo-table {
+    border: 1px solid #E1DFE0;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+.promo-table td {
+    background: #f4f4f4;
+    border: 1px solid #E1DFE0;
+    vertical-align: middle;
+}
+.promo-table td.check {
+    width: 30px;
+    text-align: center;
+}
+.promo-table td.text {
+    font-size: 110%;
+    color: #5c5c5c;
+    padding: 10px 20px;
+}
+.promo-table td.featured {
+    background: url(../img/sprite-organisers.gif) no-repeat 0px -770px;
+    height: 150px;
+}
+
+/*.form-event-alerts .field .controls {
+    width: 540px;
+}*/
+.table-contact-details {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.table-contact-details th {
+    text-align: left;
+}
+.table-contact-details th h3 {
+    margin: 16px 0 0 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.table-contact-details td {
+}
+.table-contact-details td p {
+    line-height: 170%;
+    margin-bottom: 5px;
+}
+.table-contact-details .address {
+}
+.table-contact-details .info {
+    margin-bottom: 5px;
+}
+.table-contact-details .info label {
+    display: inline-block;
+    font-weight: bold;
+    width: 33px;
+}
+
+.organizers-optin {
+    position:relative;
+    font-size: 80%;
+    margin-bottom: 20px;
+    padding-left: 23px;
+}
+
+.organizers-optin input {
+    position: absolute;
+    left: 3px;
+    top: 0;
+}

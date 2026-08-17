@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoonb640.eot?-o7ix41');
+    src: url('../fonts/icomoond41d.eot?#iefix-o7ix41') format('embedded-opentype'), url('../fonts/icomoonb640.woff?-o7ix41') format('woff'), url('../fonts/icomoonb640.ttf?-o7ix41') format('truetype'), url('../fonts/icomoonb640.svg?-o7ix41#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.footer-top a {
+    color: #ffffff !important;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icons-01:before {
+    content: "\e600";
+}
+
+.icon-icons-02:before {
+    content: "\e601";
+}
+
+.icon-icons-03:before {
+    content: "\e602";
+}
+
+.icon-icons-04 .path1:before {
+    content: "\e603";
+    color: rgb(255, 255, 255);
+}
+
+.icon-icons-04 .path2:before {
+    content: "\e604";
+    margin-left: -1.0849609375em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-icons-04 .path3:before {
+    content: "\e605";
+    margin-left: -1.0849609375em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-icons-04 .path4:before {
+    content: "\e606";
+    margin-left: -1.0849609375em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-icons-04 .path5:before {
+    content: "\e607";
+    margin-left: -1.0849609375em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-icons-04 .path6:before {
+    content: "\e608";
+    margin-left: -1.0849609375em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-icons-04 .path7:before {
+    content: "\e609";
+    margin-left: -1.0849609375em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-icons-05:before {
+    content: "\e60a";
+}
+
+.icon-icons-06:before {
+    content: "\e60b";
+}
+
+.icon-icons-07:before {
+    content: "\e60c";
+}
+
+.icon-icons-08:before {
+    content: "\e60d";
+}
+
+.icon-icons-09:before {
+    content: "\e60e";
+}
+
+.icon-icons-10:before {
+    content: "\e60f";
+}
+
+.icon-icons-11 .path1:before {
+    content: "\e610";
+    color: rgb(0, 0, 0);
+}
+
+.icon-icons-11 .path2:before {
+    content: "\e611";
+    margin-left: -1.025390625em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-icons-11 .path3:before {
+    content: "\e612";
+    margin-left: -1.025390625em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-icons-11 .path4:before {
+    content: "\e613";
+    margin-left: -1.025390625em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-icons-11 .path5:before {
+    content: "\e614";
+    margin-left: -1.025390625em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-icons-11 .path6:before {
+    content: "\e615";
+    margin-left: -1.025390625em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-icons-11 .path7:before {
+    content: "\e616";
+    margin-left: -1.025390625em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-icons-11 .path8:before {
+    content: "\e617";
+    margin-left: -1.025390625em;
+    color: rgb(255, 255, 255);
+}
+
+.icon-icons-11 .path9:before {
+    content: "\e618";
+    margin-left: -1.025390625em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-icons-11 .path10:before {
+    content: "\e619";
+    margin-left: -1.025390625em;
+    color: rgb(0, 0, 0);
+}
+
+.icon-icons-12:before {
+    content: "\e61a";
+}
+
+.icon-icons-13:before {
+    content: "\e61b";
+}
+
+.icon-icons-14:before {
+    content: "\e61c";
+}

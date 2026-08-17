@@ -1,0 +1,29 @@
+
+
+.articalheadinnerbox {margin-left:30px;}
+          
+          
+.artcalinnerhead {margin:0px; padding:0px; font-family:Calibri; line-height:150%;
+	font-size:20px; color:#32368d; text-align:left; font-weight:bolder; font-style:italic; }
+
+.artcalinnertxt {margin:0px; padding:0px; font-family:Calibri; line-height:150%;
+	font-size:14px; color:#000; text-align:left; font-weight:bold; font-style:italic; }
+	
+.artcalinnertxt b {color:#9f3d01; font-weight:bolder; }	
+
+.artcalinnertxt a {color:#0057a6; text-decoration:underline;}
+
+.artcalinnertxt p {margin:0px; padding:0px;}
+
+
+.artiimg {border:1px solid #accfe5; padding:5px; border-style:ridge;}
+
+.articontent{margin:0px; padding:0px; font-family:Calibri; font-size:13px; line-height:160%;
+               text-align:justify;}
+
+.articontent p {margin:0px; padding:0px; padding-bottom:10px;}
+
+.articontent span {margin:0px; padding:0px; color:Red; font-size:40px; font-family:Tahoma; font-style:oblique;  line-height:100%;}
+
+.topcolor {height:5px; background:#32368d; }
+

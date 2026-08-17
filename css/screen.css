@@ -1,0 +1,51 @@
+body {
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 0.84em;
+    color: #555;
+}
+
+
+h1, h2, h3, .h1 {
+    font-weight: normal;
+    line-height: 1.4em;
+}
+
+h1, .h1 {
+    font-size: 1.8em;
+    margin: 0 0;
+    color: #00769c;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 15px 0 0 0;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 15px 0 0 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 15px 0 0 0;
+}
+
+p {
+    line-height: 1.5em;
+    margin: 15px 0 0;
+}
+
+.emp {
+    color: #f37312;
+    font-style: normal;
+}
+
+.panel-main-standard {
+     float: left;
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+
+

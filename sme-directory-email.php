@@ -1,0 +1,194 @@
+<?php session_start() ?>
+
+<?php
+
+
+//  require_once('recaptchalib.php');
+//  $privatekey = "6Lfd30YUAAAAAD6yMFlAoFMi2fRIfuhgbDtqzHLb";
+//  $resp = recaptcha_check_answer ($privatekey,
+//                                $_SERVER["REMOTE_ADDR"],
+//                                $_POST["recaptcha_challenge_field"],
+//                                $_POST["recaptcha_response_field"]);
+//
+//  if (!$resp->is_valid) {
+//    // What happens when the CAPTCHA was entered incorrectly
+//    
+//    echo "<script type='text/javascript'> window.location.href='directory-form.php?captchaError=true&title=".$_POST['title']."&fname=".$_POST['fname']."&lname=".$_POST['lname']."&designation=".$_POST['designation']."&companyname=".$_POST['companyname']."&businessactivity=".$_POST['businessactivity']."&businesssector=".$_POST['businesssector']."&businessinterest=".$_POST['businessinterest']."&membership=".$_POST['membership']."&information=".$_POST['information']."&supportchamber=".$_POST['supportchamber']."&mobilenumber=".$_POST['mobilenumber']."&phonenumber=".$_POST['phonenumber']."&email=".$_POST['email']."&address=".$_POST['address']."';</script>";
+//   die("Capcha error detected");
+//  
+//   
+//  } else {
+//    // Your code here to handle a successful verification
+//  }
+  
+
+
+$title = $fname = $lname = $designation = $companyname = $businessactivity = $businesssector = $businessinterest = $membership = $information = $supportchamber = $phonenumber  = $mobilenumber = $email = $address = "";
+$to ="director@smechamber.com";
+
+if(isset($_POST['title']))
+ $title=$_POST['title'];
+if(isset($_POST['fname']))
+$fname=$_POST['fname'];
+if(isset($_POST['lname']))
+$lname=$_POST['lname'];
+if(isset($_POST['designation']))
+ $designation=$_POST['designation'];
+if(isset($_POST['companyname']))
+$companyname=$_POST['companyname'];
+if(isset($_POST['businessactivity']))
+$businessactivity=$_POST['businessactivity'];
+if(isset($_POST['businesssector']))
+ $businesssector=$_POST['businesssector'];
+if(isset($_POST['businessinterest']))
+$businessinterest=$_POST['businessinterest'];
+if(isset($_POST['membership']))
+$membership=$_POST['membership'];
+if(isset($_POST['information']))
+    $information = $_POST['information'];
+if(isset($_POST['supportchamber']))
+    $supportchamber=$_POST['supportchamber'];
+if(isset($_POST['phonenumber']))
+ $phonenumber=$_POST['phonenumber'];
+if(isset($_POST['mobilenumber']))
+$mobilenumber=$_POST['mobilenumber'];
+if(isset($_POST['email']))
+    $email = $_POST['email'];
+if(isset($_POST['address']))
+    $address=$_POST['address'];
+if(isset($_POST['g-recaptcha-response']))
+$captcha=$_POST['g-recaptcha-response'];
+
+if(!$captcha){
+   echo "<script type='text/javascript'>alert('Please Check the Captcha form.');</script>";
+//      echo 'alert("Thank you for Submitting Information.");';
+// echo 'alert("Please Check the Captcha form.");';
+exit;
+        }
+        $response=json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdkNlIUAAAAANQahCW_Uq8GtcCzb0fBzaZtHl7O&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']), true);
+        if($response['success'] == false)
+        {
+          echo '<h2>You are spammer ! Get the @$%K out</h2>';
+        }
+        else
+        {
+//          echo '<h2>Thanks for posting comment.</h2>';
+        }
+
+
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST['title'])) {
+        $error = "Please Select the Title";
+    } else {
+        $title = $_POST['title'];
+    }
+    if (empty($_POST['fname'])) {
+        $error = "Please Enter First Name";
+    } else {
+        $fname = $_POST['fname'];
+    }
+    if (empty($_POST['lname'])) {
+        $error = "Please Enter Last Name";
+    } else {
+        $lname = $_POST['lname'];
+    }
+    if (empty($_POST['designation'])) {
+        $error = "Please Enter Your Designation";
+    } else {
+        $designation = $_POST['designation'];
+    }
+    if (empty($_POST['companyname'])) {
+        $error = "Please Enter Company Name";
+    } else {
+        $companyname = $_POST['companyname'];
+    }
+      if (empty($_POST['businessactivity'])) {
+        $error = "Please Enter Business Activity";
+    } else {
+        $businessactivity = $_POST['businessactivity'];
+    }
+      if (empty($_POST['businesssector'])) {
+        $error = "Please Enter the Business Sector";
+    } else {
+        $businesssector = $_POST['businesssector'];
+    }
+      if (empty($_POST['businessinterest'])) {
+        $error = "Please Enter Business Sector";
+    } else {
+        $businessinterest = $_POST['businessinterest'];
+    }
+      if (empty($_POST['membership'])) {
+        $error = "Please Select Membership";
+    } else {
+        $membership = $_POST['membership'];
+    }
+      if (empty($_POST['information'])) {
+        $error = "Please Select Event Information";
+    } else {
+        $information = $_POST['information'];
+    }
+     if (empty($_POST['supportchamber'])) {
+        $error = "Please Enter This Field";
+    } else {
+        $supportchamber = $_POST['supportchamber'];
+    }
+     if (empty($_POST['mobilenumber'])) {
+        $error = "Please Enter Mobile Number ";
+    } else {
+        $mobilenumber = $_POST['mobilenumber'];
+    }
+     if (empty($_POST['phonenumber'])) {
+        $error = "Please Enter Phone Number";
+    } else {
+        $phonenumber = $_POST['phonenumber'];
+    }
+    
+     if (empty($_POST['email'])) {
+        $error = "Please Enter Email";
+    } else {
+        $email = $_POST['email'];
+    }
+     if (empty($_POST['address'])) {
+        $error = "Please Enter Address";
+    } else {
+        $address = $_POST['address'];
+    }
+}
+
+$fnlmsg1 = "$title $fname $lname $designation $companyname $businessactivity $businesssector $businessinterest $membership $information $supportchamber $phonenumber $mobilenumber $email $address";
+$_SESSION['title'] = $_POST['title'];
+$_SESSION['fname'] = $_POST['fname'];
+$_SESSION['lname'] = $_POST['lname'];
+$_SESSION['designation'] = $_POST['designation'];
+$_SESSION['companyname'] = $_POST['companyname'];
+$_SESSION['businessactivity'] = $_POST['businessactivity'];
+$_SESSION['businesssector'] = $_POST['businesssector'];
+$_SESSION['businessinterest'] = $_POST['businessinterest'];
+$_SESSION['membership'] = $_POST['membership'];
+$_SESSION['information'] = $_POST['information'];
+$_SESSION['supportchamber'] = $_POST['supportchamber'];
+$_SESSION['mobilenumber'] = $_POST['mobilenumber'];
+$_SESSION['phonenumber'] = $_POST['phonenumber'];
+$_SESSION['email'] = $_POST['email'];
+$_SESSION['address'] = $_POST['address'];
+
+ob_start();
+include './directory-composemsg.php';
+$message = ob_get_clean();
+if (empty($error)) {
+
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers = 'From: Sme Chamber of India For SME Directory Form' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    mail($to, $sub, $message, $headers);
+
+    echo '<script language="javascript">';
+    echo 'alert("Thank you for submitting information.");';
+    echo 'window.location.href="index.php";';
+    echo '</script>';
+} else {
+    echo "<script type='text/javascript'>alert('$error'); window.location.href='directory-form.php';</script>";
+}
+?>

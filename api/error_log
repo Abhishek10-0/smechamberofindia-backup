@@ -1,0 +1,87 @@
+[04-Jun-2024 05:50:00 America/Chicago] PHP Warning:  Undefined variable $conn in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:50:00 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:3
+Stack trace:
+#0 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:50:51 America/Chicago] PHP Warning:  Undefined variable $conn in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:50:51 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:3
+Stack trace:
+#0 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:50:53 America/Chicago] PHP Warning:  Undefined variable $conn in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:50:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:3
+Stack trace:
+#0 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:51:19 America/Chicago] PHP Warning:  Undefined variable $conn in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 7
+[04-Jun-2024 05:51:19 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 7
+[04-Jun-2024 05:52:01 America/Chicago] PHP Warning:  include(config.php): Failed to open stream: No such file or directory in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:52:01 America/Chicago] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:52:01 America/Chicago] PHP Warning:  Undefined variable $conn in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 10
+[04-Jun-2024 05:52:01 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:10
+Stack trace:
+#0 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 10
+[04-Jun-2024 05:52:05 America/Chicago] PHP Warning:  include(config.php): Failed to open stream: No such file or directory in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:52:05 America/Chicago] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 3
+[04-Jun-2024 05:52:05 America/Chicago] PHP Warning:  Undefined variable $conn in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 10
+[04-Jun-2024 05:52:05 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:10
+Stack trace:
+#0 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 10
+[04-Jun-2024 05:52:21 America/Chicago] PHP Warning:  include(config.php): Failed to open stream: No such file or directory in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 2
+[04-Jun-2024 05:52:21 America/Chicago] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 2
+[04-Jun-2024 05:52:21 America/Chicago] PHP Warning:  Undefined variable $conn in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 5
+[04-Jun-2024 05:52:21 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:5
+Stack trace:
+#0 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 5
+[04-Jun-2024 05:52:23 America/Chicago] PHP Warning:  include(config.php): Failed to open stream: No such file or directory in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 2
+[04-Jun-2024 05:52:23 America/Chicago] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 2
+[04-Jun-2024 05:52:23 America/Chicago] PHP Warning:  Undefined variable $conn in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 5
+[04-Jun-2024 05:52:23 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:5
+Stack trace:
+#0 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 5
+[04-Jun-2024 05:52:36 America/Chicago] PHP Fatal error:  Uncaught TypeError: json_encode(): Argument #2 ($flags) must be of type int, array given in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:11
+Stack trace:
+#0 /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php(11): json_encode(200, Array)
+#1 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 11
+[04-Jun-2024 05:52:50 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function json_response() in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:11
+Stack trace:
+#0 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 11
+[04-Jun-2024 05:53:31 America/Chicago] PHP Fatal error:  Uncaught TypeError: json_encode(): Argument #2 ($flags) must be of type int, array given in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php:11
+Stack trace:
+#0 /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php(11): json_encode(200, Array)
+#1 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/upcoming-events.php on line 11
+[10-Jun-2024 02:10:59 America/Chicago] PHP Fatal error:  Uncaught Error: Class "Connect" not found in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php:7
+Stack trace:
+#0 /home3/smedii4y/smechamberofindia.com/api/fetch_form.php(25): API->Select()
+#1 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php on line 7
+[10-Jun-2024 02:11:01 America/Chicago] PHP Fatal error:  Uncaught Error: Class "Connect" not found in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php:7
+Stack trace:
+#0 /home3/smedii4y/smechamberofindia.com/api/fetch_form.php(25): API->Select()
+#1 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php on line 7
+[10-Jun-2024 02:11:59 America/Chicago] PHP Fatal error:  Uncaught Error: Class "Connect" not found in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php:7
+Stack trace:
+#0 /home3/smedii4y/smechamberofindia.com/api/fetch_form.php(25): API->Select()
+#1 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php on line 7
+[10-Jun-2024 02:12:32 America/Chicago] PHP Fatal error:  Uncaught Error: Class "Connect" not found in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php:7
+Stack trace:
+#0 /home3/smedii4y/smechamberofindia.com/api/fetch_form.php(25): API->Select()
+#1 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php on line 7
+[10-Jun-2024 02:14:01 America/Chicago] PHP Fatal error:  Uncaught Error: Class "Connect" not found in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php:7
+Stack trace:
+#0 /home3/smedii4y/smechamberofindia.com/api/fetch_form.php(25): API->Select()
+#1 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/api/fetch_form.php on line 7

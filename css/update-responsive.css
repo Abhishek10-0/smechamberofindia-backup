@@ -1,0 +1,464 @@
+@media (max-width: 480px) {
+    #cp_causes-banner .caption,
+    .cp_donation-slider .caption,
+    .cp_donation-slider .bx-wrapper:before,
+    .cp_donation-slider .bx-wrapper:after {
+        display: none;
+    }
+    strong.causes-logo {
+        float: none;
+        margin: 0 auto 20px;
+        display: block;
+        text-align: center;
+    }
+    #cp_causes-banner .bx-wrapper .bx-controls-direction a {
+        top: 83%!important;
+    }
+    .cp_causes-navigation,
+    .cp_donation-details-2,
+    .cp_blog-section .holder,
+    .cp_blog-section .box {
+        width: 100%;
+    }
+    .head-right-box {
+        float: right;
+    }
+    .cp_donation-slider {
+        margin: 30px 0;
+    }
+    .cp_contribute-section .text-box {
+        float: left;
+        margin: 0 0 20px 0;
+    }
+    .cp_contribute-section .shap-box {
+        margin: 0 0 20px 0;
+    }
+    .cp_donation-details-2 {
+        margin: 0 0 23px 0;
+    }
+    .challenges-box {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .challenges-box h4 {
+        font: 400 16px/16px "Roboto Slab", serif;
+    }
+    .cp_facts-section .holder {
+        margin: 0 0 20px 0;
+    }
+    .cp_blog-section .holder {
+        max-width: 100%;
+    }
+    .cp_blog-section .box .text-box h4 {
+        font: 400 12px/15px "Roboto Slab", serif;
+    }
+    .cp_blog-section .box .text-box p {
+        font: 400 12px/22px "Open Sans", sans-serif;
+    }
+    .cp_blog-section .bx-wrapper .bx-prev {
+        left: 0;
+    }
+    .cp_blog-section .bx-wrapper .bx-next {
+        right: 0;
+    }
+    .donation-bar-section,
+    .causes-footer {
+        background-size: cover;
+    }
+    .donation-bar-section strong.title {
+        font: 700 33px/40px "Roboto Slab", serif;
+    }
+    .causes-footer-box,
+    .cp_newsletter-row form {
+        margin-bottom: 30px;
+    }
+    .causes-social ul {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .causes-social ul li {
+        float: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .cp_copyrights strong {
+        font: 400 14px/18px "Open Sans", sans-serif;
+    }
+    .cp_causes-navigation .navbar .nav>li:first-child {
+        padding: 0 18px;
+    }
+    .cp_causes-navigation .navbar .nav>li {
+        border: 0;
+    }
+    .cp_causes-navigation .navbar .nav>li>a {
+        padding: 10px;
+    }
+    .causes-footer-box address {
+        clear: both;
+    }
+    .cp_donation-details ul li {
+        font: 400 17px/17px "Roboto Slab", serif;
+    }
+    .target-project-box {
+        width: 100%;
+    }
+    .target-project-box .text-box h3 {
+        font: 400 13px/14px "Roboto Slab", serif;
+    }
+    .target-project-section .bx-wrapper::before,
+    .target-project-section .bx-wrapper::after {
+        width: 100%;
+    }
+    .event-border::before {
+        border: 0;
+    }
+    .mission-row {
+        padding: 0;
+    }
+    .mission-row .frame {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .mission-row .text-box {
+        margin: 20px 0 0 0;
+    }
+    #causes-inner-banner {
+        background-size: cover;
+    }
+    .causes-detail .cp_donation-details-2 {
+        width: 100%;
+    }
+    .causes-detail a.btn-back {
+        position: relative;
+        z-index: 9;
+    }
+    .causes-listing .pagination-all.pagination {
+        margin: 20px 0;
+    }
+    .demo-box {
+        display: none;
+    }
+    .new-pages {
+        float: none;
+        display: table;
+        margin: 20px auto 0;
+    }
+    #header {
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    #cp_causes-banner .caption {
+        max-width: 100%;
+        top: 30px;
+    }
+    #cp_causes-banner .caption .holder {
+        max-width: 100%;
+        margin: 0 0 0 10px;
+    }
+    #cp_causes-banner .caption .holder h1 {
+        font: 700 30px/36px "Roboto Slab", serif;
+        margin: 0 0 30px 0;
+    }
+    #cp_causes-banner .caption .holder p {
+        font: 400 22px/30px "Roboto Slab", serif;
+        margin: 0 0 20px 0;
+    }
+    #cp_causes-banner .bx-wrapper .bx-controls-direction a {
+        top: 91%;
+    }
+    .cp_causes-navigation {
+        width: 100%;
+        margin: 0;
+    }
+    .cp_causes-navigation .navbar .nav>li:first-child {
+        padding: 0 18px;
+    }
+    .cp_causes-navigation .navbar .nav>li {
+        border: 0;
+    }
+    .cp_causes-navigation .navbar .nav>li>a {
+        padding: 10px;
+    }
+    .head-right-box {
+        float: right;
+        margin: 10px 0 0 0;
+    }
+    .cp_donation-box ul,
+    .cp_donation-box p,
+    .cp_donation-details {
+        display: none;
+    }
+    .cp_donation-box .btn-donate,
+    .cp_facts-section .holder {
+        margin-bottom: 22px;
+    }
+    .cp_contribute-section .shap-box,
+    .causes-footer-box,
+    .cp_newsletter-row form {
+        margin: 0 0 20px 0;
+    }
+    .cp_contribute-section .text-box {
+        float: left;
+        margin: 0 0 20px 0;
+    }
+    .cp_donation-details-2 {
+        margin: 0 0 23px;
+        width: 100%;
+    }
+    .challenges-box {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .cp_blog-section .box {
+        width: 100%;
+    }
+    .cp_blog-section .holder {
+        max-width: 100%;
+    }
+    .cp_blog-section .bx-wrapper .bx-prev {
+        left: 0;
+    }
+    .cp_blog-section .bx-wrapper .bx-next {
+        right: 0;
+    }
+    .cp_blog-section .bx-wrapper .bx-controls-direction a {
+        top: 100%;
+    }
+    .donation-bar-section,
+    .causes-footer {
+        background-size: cover;
+    }
+    .donation-bar-section strong.title {
+        font: 700 36px/48px "Roboto Slab", serif;
+    }
+    .causes-footer-box address {
+        clear: both;
+    }
+    .causes-social ul {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .causes-social ul li {
+        float: none;
+        display: inline-block;
+    }
+    .target-project-box,
+    .target-project-section .bx-wrapper::before,
+    .target-project-section .bx-wrapper:after {
+        width: 100%;
+    }
+    .mission-row .text-box {
+        margin: 20px 0 0 0;
+    }
+    #causes-inner-banner {
+        background-size: cover;
+    }
+    .causes-detail .cp_donation-details-2 {
+        width: 100%;
+    }
+    .causes-detail a.btn-back {
+        position: relative;
+        z-index: 9;
+    }
+    .demo-box {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    #cp_causes-banner .caption {
+        top: 20px;
+        max-width: 100%;
+    }
+    #cp_causes-banner .caption .holder {
+        max-width: 100%;
+        margin: 0 0 0 20px;
+    }
+    .cp_causes-navigation {
+        width: 100%;
+        margin: 0;
+    }
+    .cp_causes-navigation .navbar .nav>li:first-child {
+        padding: 0 18px;
+    }
+    .cp_causes-navigation .navbar .nav>li {
+        border: 0;
+    }
+    .cp_causes-navigation .navbar .nav>li>a {
+        padding: 10px;
+    }
+    .head-right-box {
+        float: right;
+        margin: 10px 0 0 0;
+    }
+    .cp_donation-box p {
+        display: none;
+    }
+    .cp_donation-box h2 {
+        margin: 0 0 10px 0;
+    }
+    .cp_donation-box strong.title {
+        padding: 0 0 10px 0;
+    }
+    .cp_contribute-section .text-box {
+        float: left;
+        margin: 0 0 10px 0;
+    }
+    .cp_contribute-section .shap-box {
+        margin: 0 0 10px 0;
+    }
+    .cp_donation-details-2 {
+        margin: 0 0 23px -248px;
+    }
+    #cp_causes-banner .caption .holder h1 {
+        margin: 0 0 23px 0;
+    }
+    #cp_causes-banner .caption .holder h1::before {
+        bottom: -16px;
+    }
+    #cp_causes-banner .caption .holder p {
+        font: 400 27px/38px "Roboto Slab", serif;
+        margin: 0 0 10px 0;
+    }
+    #cp_causes-banner .bx-wrapper .bx-controls-direction a {
+        top: 93%;
+    }
+    .challenges-box {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .cp_facts-section strong.number {
+        font: 700 27px/27px "Roboto Slab", serif;
+    }
+    .cp_facts-section span {
+        font: 400 12px/15px "Roboto Slab", serif;
+    }
+    .cp_facts-section .icon-box {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .cp_blog-section .box {
+        width: 100%;
+    }
+    .cp_blog-section .holder {
+        max-width: 100%;
+    }
+    .cp_blog-section .bx-wrapper .bx-prev {
+        left: 0;
+    }
+    .cp_blog-section .bx-wrapper .bx-next {
+        right: 0;
+    }
+    .cp_blog-section .bx-wrapper .bx-controls-direction a {
+        top: 36%;
+    }
+    .donation-bar-section {
+        background-size: cover;
+    }
+    .causes-footer-box address {
+        width: 100%;
+    }
+    .causes-footer-box address ul li,
+    .causes-footer-box address ul li a {
+        font-size: 13px;
+    }
+    .recent-post .text-box {
+        float: left;
+    }
+    .categories li a {
+        font: 400 12px/14px "Roboto Slab", serif;
+    }
+    .causes-social ul li:first-child {
+        padding: 0 0 10px 33px;
+    }
+    .causes-social ul li {
+        padding: 0 0 10px 33px;
+    }
+    .government-widgets-box strong {
+        font: 700 20px/25px "Roboto Slab", serif;
+    }
+    .target-project-box,
+    .target-project-section .bx-wrapper::before,
+    .target-project-section .bx-wrapper:after {
+        width: 100%;
+    }
+    .our-gols-box .text-box {
+        float: left;
+    }
+    .our-gols-box .round-box {
+        margin: 0 0 20px 0;
+    }
+    .event-border::before {
+        border: 0;
+    }
+    .box-1 .text {
+        float: left;
+        margin: 10px 0 0 0;
+    }
+    #causes-inner-banner {
+        background-size: cover;
+    }
+    .cp_donation-details-2 .cp_donation-details {
+        margin: -200% 0 30px;
+    }
+    .causes-detail .cp_donation-details-2 {
+        width: 100%;
+    }
+    .causes-detail a.btn-back {
+        position: relative;
+        z-index: 9;
+    }
+    .causes-listing .cp_donation-details-2 {
+        width: 100%;
+    }
+    .demo-box {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    #cp_causes-banner .caption {
+        top: 240px;
+    }
+    #cp_causes-banner .caption .holder {
+        max-width: 512px;
+        margin: 0;
+    }
+    #cp_causes-banner .bx-wrapper .bx-controls-direction a {
+        top: 50%;
+    }
+    .cp_donation-box h2 {
+        margin: 0 0 28px 0;
+    }
+    .cp_donation-box strong.title {
+        padding: 0 0 20px 0;
+    }
+    .cp_donation-details-2 {
+        margin: 0 0 23px -100px;
+    }
+    .cp_facts-section strong.number {
+        font: 700 48px/48px "Roboto Slab", serif;
+    }
+    .cp_blog-section .bx-wrapper .bx-prev {
+        left: -90px;
+    }
+    .cp_blog-section .bx-wrapper .bx-next {
+        right: -90px;
+    }
+    .donation-bar-section {
+        background-size: 100%;
+    }
+    .causes-listing .cp_donation-details-2 {
+        width: auto;
+    }
+}

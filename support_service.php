@@ -1,0 +1,951 @@
+<?php
+include('config.php');
+session_start();
+
+if (isset($_POST['add_name'])) {
+	
+$username = "smechm";
+$password = "sme123";
+$type = "TEXT";
+$sender = "SMECHM";
+$mobileNumber = $_SESSION["phone"];
+
+$rndno=rand(100000, 999999);
+	
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "http://103.211.202.40/sendsms/bulksms_v2.php?apikey=c21lY2htOmlXejVvYkJD&type=TEXT&sender=SMECHM&entityId=1201158099447823312&mobile=$mobileNumber&message=$rndno%20is%20the%20OTP%20for%20the%20registration%20process%20-%20SMECHM",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+  CURLOPT_HTTPHEADER => array(
+    "cache-control: no-cache",
+    "postman-token: b04b5d1c-1164-cc2c-1675-6833c1604270"
+  ),
+));
+$response = curl_exec($curl);
+$err = curl_error($curl);
+curl_close($curl);
+
+if ($err) {
+  $errMSGs = "Error :" . $err;
+} else {
+
+$_SESSION['fname']=$_POST['fname'];
+$_SESSION['lname']=$_POST['lname'];
+$_SESSION['designation']=$_POST['designation'];
+$_SESSION['companyname']=$_POST['companyname'];
+$_SESSION['industrial']=$_POST['industrial'];
+$_SESSION['email']=$_POST['email'];
+$_SESSION['phone']=$_POST['phone'];
+$_SESSION['city']=$_POST['city'];
+$_SESSION['state']=$_POST['state'];
+$_SESSION['category']=$_POST['category'];
+$_SESSION['services']=$_POST['services'];
+$_SESSION['tell']=$_POST['tell'];
+$_SESSION['tell1']=$_POST['tell1'];
+$_SESSION['otp']=$rndno;
+header( "Location: support_service_verify.php" );
+}
+} else {}
+	
+	?>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Support Services | SME CHAMBER OF INDIA</title>
+    <meta name="keywords" content="Contact detail of SME Chamber of Inida, Address of SME Chamber of India, location of SME Chamber of Inida">
+    <meta name="description" content="Registered & Head Office:3, Ground Floor, Samruddhi Venture Park, Adjoining Hotel Tunga Paradise, SEEPZ - MIDC Central Road, Next to Akruti Centre, Andheri (E) Mumbai - 400 093.E-Mail : smechamberofindia@vsnl.net | smechamberofindia@gmail.com | smechamber@vsnl.net ,Tel : + 91 – 22 – 2832 7219 / 6667 4444 / 6150 9800 | Fax : + 91 – 22 – 2825 0414,Working Days : Monday to Saturday | Working Hours : 09.30 a.m to 6.30 p.m">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/color.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/form.css" media="screen"/>
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->		
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="css/screen.form.css" />
+    <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+    <script src="js/html5.js" type="text/javascript"></script>       
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112053032-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112053032-1');
+    </script>
+    <style>
+    	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+      float: left;
+    }
+    .col-xs-12 {
+      width: 100%;
+    }
+    .col-xs-11 {
+      width: 91.66666667%;
+    }
+    .col-xs-10 {
+      width: 83.33333333%;
+    }
+    .col-xs-9 {
+      width: 75%;
+    }
+    .col-xs-8 {
+      width: 66.66666667%;
+    }
+    .col-xs-7 {
+      width: 58.33333333%;
+    }
+    .col-xs-6 {
+      width: 50%;
+    }
+    .col-xs-5 {
+      width: 41.66666667%;
+    }
+    .col-xs-4 {
+      width: 33.33333333%;
+    }
+    .col-xs-3 {
+      width: 25%;
+    }
+    .col-xs-2 {
+      width: 16.66666667%;
+    }
+    .col-xs-1 {
+      width: 8.33333333%;
+    }
+    .col-xs-pull-12 {
+      right: 100%;
+    }
+    .col-xs-pull-11 {
+      right: 91.66666667%;
+    }
+    .col-xs-pull-10 {
+      right: 83.33333333%;
+    }
+    .col-xs-pull-9 {
+      right: 75%;
+    }
+    .col-xs-pull-8 {
+      right: 66.66666667%;
+    }
+    .col-xs-pull-7 {
+      right: 58.33333333%;
+    }
+    .col-xs-pull-6 {
+      right: 50%;
+    }
+    .col-xs-pull-5 {
+      right: 41.66666667%;
+    }
+    .col-xs-pull-4 {
+      right: 33.33333333%;
+    }
+    .col-xs-pull-3 {
+      right: 25%;
+    }
+    .col-xs-pull-2 {
+      right: 16.66666667%;
+    }
+    .col-xs-pull-1 {
+      right: 8.33333333%;
+    }
+    .col-xs-pull-0 {
+      right: auto;
+    }
+    .col-xs-push-12 {
+      left: 100%;
+    }
+    .col-xs-push-11 {
+      left: 91.66666667%;
+    }
+    .col-xs-push-10 {
+      left: 83.33333333%;
+    }
+    .col-xs-push-9 {
+      left: 75%;
+    }
+    .col-xs-push-8 {
+      left: 66.66666667%;
+    }
+    .col-xs-push-7 {
+      left: 58.33333333%;
+    }
+    .col-xs-push-6 {
+      left: 50%;
+    }
+    .col-xs-push-5 {
+      left: 41.66666667%;
+    }
+    .col-xs-push-4 {
+      left: 33.33333333%;
+    }
+    .col-xs-push-3 {
+      left: 25%;
+    }
+    .col-xs-push-2 {
+      left: 16.66666667%;
+    }
+    .col-xs-push-1 {
+      left: 8.33333333%;
+    }
+    .col-xs-push-0 {
+      left: auto;
+    }
+    .col-xs-offset-12 {
+      margin-left: 100%;
+    }
+    .col-xs-offset-11 {
+      margin-left: 91.66666667%;
+    }
+    .col-xs-offset-10 {
+      margin-left: 83.33333333%;
+    }
+    .col-xs-offset-9 {
+      margin-left: 75%;
+    }
+    .col-xs-offset-8 {
+      margin-left: 66.66666667%;
+    }
+    .col-xs-offset-7 {
+      margin-left: 58.33333333%;
+    }
+    .col-xs-offset-6 {
+      margin-left: 50%;
+    }
+    .col-xs-offset-5 {
+      margin-left: 41.66666667%;
+    }
+    .col-xs-offset-4 {
+      margin-left: 33.33333333%;
+    }
+    .col-xs-offset-3 {
+      margin-left: 25%;
+    }
+    .col-xs-offset-2 {
+      margin-left: 16.66666667%;
+    }
+    .col-xs-offset-1 {
+      margin-left: 8.33333333%;
+    }
+    .col-xs-offset-0 {
+      margin-left: 0%;
+    }
+    @media (min-width: 768px) {
+      .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: left;
+      }
+      .col-sm-12 {
+        width: 100%;
+      }
+      .col-sm-11 {
+        width: 91.66666667%;
+      }
+      .col-sm-10 {
+        width: 83.33333333%;
+      }
+      .col-sm-9 {
+        width: 75%;
+      }
+      .col-sm-8 {
+        width: 66.66666667%;
+      }
+      .col-sm-7 {
+        width: 58.33333333%;
+      }
+      .col-sm-6 {
+        width: 50%;
+      }
+      .col-sm-5 {
+        width: 41.66666667%;
+      }
+      .col-sm-4 {
+        width: 33.33333333%;
+      }
+      .col-sm-3 {
+        width: 25%;
+      }
+      .col-sm-2 {
+        width: 16.66666667%;
+      }
+      .col-sm-1 {
+        width: 8.33333333%;
+      }
+      .col-sm-pull-12 {
+        right: 100%;
+      }
+      .col-sm-pull-11 {
+        right: 91.66666667%;
+      }
+      .col-sm-pull-10 {
+        right: 83.33333333%;
+      }
+      .col-sm-pull-9 {
+        right: 75%;
+      }
+      .col-sm-pull-8 {
+        right: 66.66666667%;
+      }
+      .col-sm-pull-7 {
+        right: 58.33333333%;
+      }
+      .col-sm-pull-6 {
+        right: 50%;
+      }
+      .col-sm-pull-5 {
+        right: 41.66666667%;
+      }
+      .col-sm-pull-4 {
+        right: 33.33333333%;
+      }
+      .col-sm-pull-3 {
+        right: 25%;
+      }
+      .col-sm-pull-2 {
+        right: 16.66666667%;
+      }
+      .col-sm-pull-1 {
+        right: 8.33333333%;
+      }
+      .col-sm-pull-0 {
+        right: auto;
+      }
+      .col-sm-push-12 {
+        left: 100%;
+      }
+      .col-sm-push-11 {
+        left: 91.66666667%;
+      }
+      .col-sm-push-10 {
+        left: 83.33333333%;
+      }
+      .col-sm-push-9 {
+        left: 75%;
+      }
+      .col-sm-push-8 {
+        left: 66.66666667%;
+      }
+      .col-sm-push-7 {
+        left: 58.33333333%;
+      }
+      .col-sm-push-6 {
+        left: 50%;
+      }
+      .col-sm-push-5 {
+        left: 41.66666667%;
+      }
+      .col-sm-push-4 {
+        left: 33.33333333%;
+      }
+      .col-sm-push-3 {
+        left: 25%;
+      }
+      .col-sm-push-2 {
+        left: 16.66666667%;
+      }
+      .col-sm-push-1 {
+        left: 8.33333333%;
+      }
+      .col-sm-push-0 {
+        left: auto;
+      }
+      .col-sm-offset-12 {
+        margin-left: 100%;
+      }
+      .col-sm-offset-11 {
+        margin-left: 91.66666667%;
+      }
+      .col-sm-offset-10 {
+        margin-left: 83.33333333%;
+      }
+      .col-sm-offset-9 {
+        margin-left: 75%;
+      }
+      .col-sm-offset-8 {
+        margin-left: 66.66666667%;
+      }
+      .col-sm-offset-7 {
+        margin-left: 58.33333333%;
+      }
+      .col-sm-offset-6 {
+        margin-left: 50%;
+      }
+      .col-sm-offset-5 {
+        margin-left: 41.66666667%;
+      }
+      .col-sm-offset-4 {
+        margin-left: 33.33333333%;
+      }
+      .col-sm-offset-3 {
+        margin-left: 25%;
+      }
+      .col-sm-offset-2 {
+        margin-left: 16.66666667%;
+      }
+      .col-sm-offset-1 {
+        margin-left: 8.33333333%;
+      }
+      .col-sm-offset-0 {
+        margin-left: 0%;
+      }
+    }
+    @media (min-width: 992px) {
+      .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+      }
+      .col-md-12 {
+        width: 100%;
+      }
+      .col-md-11 {
+        width: 91.66666667%;
+      }
+      .col-md-10 {
+        width: 83.33333333%;
+      }
+      .col-md-9 {
+        width: 75%;
+      }
+      .col-md-8 {
+        width: 66.66666667%;
+      }
+      .col-md-7 {
+        width: 58.33333333%;
+      }
+      .col-md-6 {
+        width: 50%;
+      }
+      .col-md-5 {
+        width: 41.66666667%;
+      }
+      .col-md-4 {
+        width: 33.33333333%;
+      }
+      .col-md-3 {
+        width: 25%;
+      }
+      .col-md-2 {
+        width: 16.66666667%;
+      }
+      .col-md-1 {
+        width: 8.33333333%;
+      }
+      .col-md-pull-12 {
+        right: 100%;
+      }
+      .col-md-pull-11 {
+        right: 91.66666667%;
+      }
+      .col-md-pull-10 {
+        right: 83.33333333%;
+      }
+      .col-md-pull-9 {
+        right: 75%;
+      }
+      .col-md-pull-8 {
+        right: 66.66666667%;
+      }
+      .col-md-pull-7 {
+        right: 58.33333333%;
+      }
+      .col-md-pull-6 {
+        right: 50%;
+      }
+      .col-md-pull-5 {
+        right: 41.66666667%;
+      }
+      .col-md-pull-4 {
+        right: 33.33333333%;
+      }
+      .col-md-pull-3 {
+        right: 25%;
+      }
+      .col-md-pull-2 {
+        right: 16.66666667%;
+      }
+      .col-md-pull-1 {
+        right: 8.33333333%;
+      }
+      .col-md-pull-0 {
+        right: auto;
+      }
+      .col-md-push-12 {
+        left: 100%;
+      }
+      .col-md-push-11 {
+        left: 91.66666667%;
+      }
+      .col-md-push-10 {
+        left: 83.33333333%;
+      }
+      .col-md-push-9 {
+        left: 75%;
+      }
+      .col-md-push-8 {
+        left: 66.66666667%;
+      }
+      .col-md-push-7 {
+        left: 58.33333333%;
+      }
+      .col-md-push-6 {
+        left: 50%;
+      }
+      .col-md-push-5 {
+        left: 41.66666667%;
+      }
+      .col-md-push-4 {
+        left: 33.33333333%;
+      }
+      .col-md-push-3 {
+        left: 25%;
+      }
+      .col-md-push-2 {
+        left: 16.66666667%;
+      }
+      .col-md-push-1 {
+        left: 8.33333333%;
+      }
+      .col-md-push-0 {
+        left: auto;
+      }
+      .col-md-offset-12 {
+        margin-left: 100%;
+      }
+      .col-md-offset-11 {
+        margin-left: 91.66666667%;
+      }
+      .col-md-offset-10 {
+        margin-left: 83.33333333%;
+      }
+      .col-md-offset-9 {
+        margin-left: 75%;
+      }
+      .col-md-offset-8 {
+        margin-left: 66.66666667%;
+      }
+      .col-md-offset-7 {
+        margin-left: 58.33333333%;
+      }
+      .col-md-offset-6 {
+        margin-left: 50%;
+      }
+      .col-md-offset-5 {
+        margin-left: 41.66666667%;
+      }
+      .col-md-offset-4 {
+        margin-left: 33.33333333%;
+      }
+      .col-md-offset-3 {
+        margin-left: 25%;
+      }
+      .col-md-offset-2 {
+        margin-left: 16.66666667%;
+      }
+      .col-md-offset-1 {
+        margin-left: 8.33333333%;
+      }
+      .col-md-offset-0 {
+        margin-left: 0%;
+      }
+    }
+    @media (min-width: 1200px) {
+      .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+      }
+      .col-lg-12 {
+        width: 100%;
+      }
+      .col-lg-11 {
+        width: 91.66666667%;
+      }
+      .col-lg-10 {
+        width: 83.33333333%;
+      }
+      .col-lg-9 {
+        width: 75%;
+      }
+      .col-lg-8 {
+        width: 66.66666667%;
+      }
+      .col-lg-7 {
+        width: 58.33333333%;
+      }
+      .col-lg-6 {
+        width: 50%;
+      }
+      .col-lg-5 {
+        width: 41.66666667%;
+      }
+      .col-lg-4 {
+        width: 33.33333333%;
+      }
+      .col-lg-3 {
+        width: 25%;
+      }
+      .col-lg-2 {
+        width: 16.66666667%;
+      }
+      .col-lg-1 {
+        width: 8.33333333%;
+      }
+      .col-lg-pull-12 {
+        right: 100%;
+      }
+      .col-lg-pull-11 {
+        right: 91.66666667%;
+      }
+      .col-lg-pull-10 {
+        right: 83.33333333%;
+      }
+      .col-lg-pull-9 {
+        right: 75%;
+      }
+      .col-lg-pull-8 {
+        right: 66.66666667%;
+      }
+      .col-lg-pull-7 {
+        right: 58.33333333%;
+      }
+      .col-lg-pull-6 {
+        right: 50%;
+      }
+      .col-lg-pull-5 {
+        right: 41.66666667%;
+      }
+      .col-lg-pull-4 {
+        right: 33.33333333%;
+      }
+      .col-lg-pull-3 {
+        right: 25%;
+      }
+      .col-lg-pull-2 {
+        right: 16.66666667%;
+      }
+      .col-lg-pull-1 {
+        right: 8.33333333%;
+      }
+      .col-lg-pull-0 {
+        right: auto;
+      }
+      .col-lg-push-12 {
+        left: 100%;
+      }
+      .col-lg-push-11 {
+        left: 91.66666667%;
+      }
+      .col-lg-push-10 {
+        left: 83.33333333%;
+      }
+      .col-lg-push-9 {
+        left: 75%;
+      }
+      .col-lg-push-8 {
+        left: 66.66666667%;
+      }
+      .col-lg-push-7 {
+        left: 58.33333333%;
+      }
+      .col-lg-push-6 {
+        left: 50%;
+      }
+      .col-lg-push-5 {
+        left: 41.66666667%;
+      }
+      .col-lg-push-4 {
+        left: 33.33333333%;
+      }
+      .col-lg-push-3 {
+        left: 25%;
+      }
+      .col-lg-push-2 {
+        left: 16.66666667%;
+      }
+      .col-lg-push-1 {
+        left: 8.33333333%;
+      }
+      .col-lg-push-0 {
+        left: auto;
+      }
+      .col-lg-offset-12 {
+        margin-left: 100%;
+      }
+      .col-lg-offset-11 {
+        margin-left: 91.66666667%;
+      }
+      .col-lg-offset-10 {
+        margin-left: 83.33333333%;
+      }
+      .col-lg-offset-9 {
+        margin-left: 75%;
+      }
+      .col-lg-offset-8 {
+        margin-left: 66.66666667%;
+      }
+      .col-lg-offset-7 {
+        margin-left: 58.33333333%;
+      }
+      .col-lg-offset-6 {
+        margin-left: 50%;
+      }
+      .col-lg-offset-5 {
+        margin-left: 41.66666667%;
+      }
+      .col-lg-offset-4 {
+        margin-left: 33.33333333%;
+      }
+      .col-lg-offset-3 {
+        margin-left: 25%;
+      }
+      .col-lg-offset-2 {
+        margin-left: 16.66666667%;
+      }
+      .col-lg-offset-1 {
+        margin-left: 8.33333333%;
+      }
+      .col-lg-offset-0 {
+        margin-left: 0%;
+      }
+    }
+	</style>		
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112053032-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112053032-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112053032-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112053032-1');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3MN4BF7FFJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3MN4BF7FFJ');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '784564702179617');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=784564702179617&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  </head>
+    <body>
+      <div id="wrapper">
+        <?php include 'header.php'; ?>
+          <div id="main">
+            <div id="banner" style="height: 75px;">
+              <div id="inner-banner">
+                <div class="container">
+                  <div class="row-fluid">
+                    <h1>Support Service</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="breadcrumb">
+              <li><a href="index.php">Home</a></li>
+              <li>Support Service</li>
+            </ul>                 
+					  <section class="membership-form" >
+              <div class="container" >
+                <div class="row-fluid">
+                  <form action="" method="post" id="mform" class="member-form">
+                    <div class="panel-main-standard panel-form">
+                      <h1>REQUEST FOR SUPPORT SERVICES</h1>
+                      <p>Fields marked with a <span class="emp">*</span> are required.</p>
+                      <div class="form">
+                        <div class="field">
+                          <div class="control-label"><strong>Your Details</strong></div>
+                        </div>
+                        <div class="field">
+                          <label class="control-label" for="Your name">Name <span class="emp">*</span></label>
+                          <div class="controls">                                                   
+                            <input name="fname" type="text" id="fname" class="text" placeholder="first name" style="width:252px;" required value="<?php echo isset($_GET['fname']) ? $_GET['fname'] : "" ?>">
+                            <input name="lname" type="text" id="lname" class="text" placeholder="last name" style="width:253px;" required value="<?php echo isset($_GET['lname']) ? $_GET['lname'] : "" ?>">
+                          </div>
+                        </div>
+                        <div class="field">
+                          <label class="control-label" for="Designation">Designation <span class="emp">*</span></label>
+                          <div class="controls">
+                            <input name="designation" type="text" id="designation" class="text" required value="<?php echo isset($_GET['designation']) ? $_GET['designation'] : "" ?>">
+                          </div>
+                        </div>
+                        <div class="field">
+                          <label class="control-label" for="Company Name">Company Name <span class="emp">*</span></label>
+                          <div class="controls">
+                            <input name="companyname" type="text" id="companyname" class="text" required value="<?php echo isset($_GET['companyname']) ? $_GET['companyname'] : "" ?>">
+                          </div>
+                        </div>
+                        
+                        <div class="field">
+                          <label class="control-label" for="Department">Industrial / Business Sector <span class="emp">*</span></label>
+                          <div class="controls">
+                            <input name="industrial" type="text" id="department" class="text" required value="<?php echo isset($_GET['industrial']) ? $_GET['department'] : "" ?>">
+                        </div>
+                          
+                          <div class="field">
+                            <label class="control-label" for="Email">Email <span class="emp">*</span></label>
+                            <div class="controls">
+                              <input name="email" type="email" id="email" class="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required value="<?php echo isset($_GET['email']) ? $_GET['email'] : "" ?>">
+                            </div>
+                          </div>											
+											    
+                          <div class="field">
+                            <label class="control-label" for="Mobile No.">Mobile No.: <span class="emp">*</span></label>
+                            <div class="controls">
+													    <input type="text" class="form-control" name="phone" placeholder="add 91 before 10 digit number" maxlength="12"  style="width:253px;" minlength="12" pattern="\d{12}$" title="Please enter exactly 12 digits" onkeypress="return isNumber(event)" required>	
+                            </div>
+                          </div>											
+											    
+                          <div class="field">                            
+                            <label class="control-label" for="City">City <span class="emp">*</span></label>
+                            <div class="controls">
+                              <input name="city" type="text" id="city" class="text" required value="<?php echo isset($_GET['city']) ? $_GET['city'] : "" ?>">
+                            </div>
+                          </div>
+											    
+                          <div class="field">
+                            <label class="control-label" for="City">State <span class="emp">*</span></label>
+                            <div class="controls">
+                              <input name="state" type="text" id="state" class="text" required value="<?php echo isset($_GET['state']) ? $_GET['city'] : "" ?>">
+                            </div>
+                          </div>
+
+											    <div class="field" style="padding: 20px 0px;">
+									          <label><b>I am interested to avail following services <span class="emp">*</span></b></label>
+										        <div class="checkbox">
+        											<label>											 
+        											  <input type="radio" name="services" value="Bank Finance &amp; Investment for business growth, New Projects, Expansion or Diversification."> Bank Finance &amp; Investment for business growth, New Projects, Expansion or Diversification.
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Term Loan Facilities to buy Capital Goods, turnkey projects, advanced and patented technologies."> Term Loan Facilities to buy Capital Goods, turnkey projects, advanced and patented technologies.
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Mergers &amp; acquisitions, joint ventures, technology transfers, contract manufacturing and collaborations with Indian and foreign companies"> Mergers &amp; acquisitions, joint ventures, technology transfers, contract manufacturing and collaborations with Indian and foreign companies
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Credit reports on Creditworthiness and Credibility to present to the Banks, investors, corporates, suppliers, buyers &amp; strategic business partners."> Credit reports on Creditworthiness and Credibility to present to the Banks, investors, corporates, suppliers, buyers &amp; strategic business partners.
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Buy and sell factories, identify ready-made Industrial Premises or Industrial lands for setting up manufacturing units."> Buy and sell factories, identify ready-made Industrial Premises or Industrial lands for setting up manufacturing units.
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Finance for Export and Import businesses and Letter of Credit facilities.">Finance for Export and Import businesses and Letter of Credit facilities.
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Foreign Currency Term Loans for Exporters."> Foreign Currency Term Loans for Exporters.
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Collateral Free Loans upto Rs.5 crores for the manufacturing and service sectors."> Collateral Free Loans upto Rs.5 crores for the manufacturing and service sectors.
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Non-fund-based facilities.">  Non-fund-based facilities.
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Private Equity and Venture Capital."> Private Equity and Venture Capital.
+        											</label>
+        											<label>
+        											  <input type="radio" name="services" value="Resolving NPA issues, debt restructuring of sick units, taking up grievances and issues with the financial institutions and appropriate authorities for resolution.">  Resolving NPA issues, debt restructuring of sick units, taking up grievances and issues with the financial institutions and appropriate authorities for resolution.
+        											</label>											
+        										</div>
+        								  </div>
+                          
+                          <div class="field" style="padding: 20px 0px;">
+								            <label><b>Consent</b> <span class="emp">*</span></label>
+								              <div class="checkbox" style="margin-left: 20px;">
+  									            <label>
+  									              <input type="checkbox" name="category" value="I give my consent to use my contact details to receive business leads, events and other services." style="margin-top: -1px;"> I give my consent to use my contact details to receive business leads, events and other services.
+  									            </label>
+									            </div>
+								          </div>
+										    <div class="field" style="padding: 20px 0px;">
+									        <label><b>Please tell us How you know about SME Chamber of India?  </b><span class="emp">*</span></label>
+      										<div class="checkbox">
+      											<label>
+      											  <input type="radio" name="tell" value="Email"> Email
+      											</label>
+      											<label>
+      											  <input type="radio" name="tell" value="WhatsApp"> WhatsApp
+      											</label>
+      											<label>
+      											  <input type="radio" name="tell" value="Website"> Website
+      											</label>
+      											<label>
+      											  <input type="radio" name="tell" value="Social Media"> Social Media
+      											</label>
+      											<label>
+      											  <input type="radio" name="tell" value="Other:"> Other <input type="text" name="tell1" class="form-control">
+      											</label>
+      										</div>
+      								  </div>
+                      </div>                      
+							        <input type="submit" name="add_name" value="Submit" class="btn-continue"  />
+                    </div>
+                  </form>
+                </div>      
+              </div>
+            </section>
+            <?php include 'footer.php'; ?>
+          </div>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/jquery.plugin.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.quicksand.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+        <script type="text/javascript" src="js/styleswitch.js"></script>
+        <script type="text/javascript" src="js/jquery.tabSlideOut.v1.3.js"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+        <!--<script src=”//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js”></script>-->
+    </body>
+</html>

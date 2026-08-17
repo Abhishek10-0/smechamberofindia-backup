@@ -1,0 +1,22 @@
+[21-Jul-2026 02:48:53 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'smedii4y_smechamberofindia.newsletter_subscriptions' doesn't exist in /home3/smedii4y/smechamberofindia.com/new-newsletter/ajax/send-otp.php:10
+Stack trace:
+#0 /home3/smedii4y/smechamberofindia.com/new-newsletter/ajax/send-otp.php(10): mysqli->prepare('INSERT INTO new...')
+#1 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/new-newsletter/ajax/send-otp.php on line 10
+[21-Jul-2026 02:50:47 America/Chicago] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'smedii4y_smechamberofindia.newsletter_subscriptions' doesn't exist in /home3/smedii4y/smechamberofindia.com/new-newsletter/ajax/send-otp.php:10
+Stack trace:
+#0 /home3/smedii4y/smechamberofindia.com/new-newsletter/ajax/send-otp.php(10): mysqli->prepare('INSERT INTO new...')
+#1 {main}
+  thrown in /home3/smedii4y/smechamberofindia.com/new-newsletter/ajax/send-otp.php on line 10
+[21-Jul-2026 04:13:48 America/Chicago] MAIL TO: guptaabhishek0504@gmail.com
+[21-Jul-2026 04:13:48 America/Chicago] FROM: guptaabhishek0504@gmail.com
+[21-Jul-2026 04:13:48 America/Chicago] MAIL STATUS: SUCCESS
+[21-Jul-2026 04:13:48 America/Chicago] MAIL TO: guptaabhishek0504@gmail.com
+[21-Jul-2026 04:13:48 America/Chicago] FROM: guptaabhishek0504@gmail.com
+[21-Jul-2026 04:13:48 America/Chicago] MAIL STATUS: SUCCESS
+[21-Jul-2026 04:21:15 America/Chicago] MAIL TO: guptaabhishek0504@gmail.com
+[21-Jul-2026 04:21:15 America/Chicago] FROM: no-reply@smebusinessforum.com
+[21-Jul-2026 04:21:15 America/Chicago] MAIL STATUS: SUCCESS
+[21-Jul-2026 04:21:15 America/Chicago] MAIL TO: abhishekoffice69@gmail.com
+[21-Jul-2026 04:21:15 America/Chicago] FROM: no-reply@smebusinessforum.com
+[21-Jul-2026 04:21:15 America/Chicago] MAIL STATUS: SUCCESS
