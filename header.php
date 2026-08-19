@@ -24,12 +24,12 @@
     }
   }
   </style>
-<header id="header">
-  <div class="head-topbar">
+<header id="header" class="!relative !float-left !w-full !bg-[url('../images/header-bg.jpg')] !bg-cover !bg-center !bg-no-repeat">
+  <div class="head-topbar !float-left !w-full !bg-[linear-gradient(135deg,#0b5f7d_0%,#1e88e5_100%)] !py-1">
     <div class="container">
       <div class="row-fluid">
         <div class="col-md-3 col-md-12 left">
-          <ul>
+          <ul class="!m-0 !flex !list-none !p-0">
             <li><a href="https://www.smechamberofindia.com/"><b>HOME</b></a></li>
             <li><a href="contact-us"><strong>CONTACT US</strong></a></li> 
             <li><a href="Disclaimer"><strong>DISCLAIMER</strong></a></li> 
@@ -38,7 +38,7 @@
           </ul>
         </div>
         <div class="col-md-8">
-          <ul class="header-social">
+          <ul class="header-social !m-0 !flex !list-none !items-center !justify-end !p-0">
             <!--<li><a href="GST.php">GST HELP DESK</a></li>-->
             <!--<li><a href="add-name-whatsapp.php">Whatsapp Group</a></li>-->
             <li style="color:#fff"><a href="press_release"><strong>Press Release</strong></a> | </li> 
@@ -77,15 +77,15 @@
       </div>
     </div>
   </div>
-  <div class="menu-row">
+  <div class="menu-row !float-left !w-full">
     <div class="container">
       <div class="row-fluid"> 
-        <strong class="logo" style="background-color: white;">
-          <a href="https://www.smechamberofindia.com/"><img src="images/SME_LOGO.svg" alt="SME Chamber of India"></a>
+        <strong class="logo !relative !mx-auto !mb-[14px] !block !h-[125px] !max-w-[330px] !rounded-b-[5px] !bg-white !shadow-[inset_0_3px_3px_0_rgba(0,0,0,0.3)]">
+          <a href="https://www.smechamberofindia.com/" class="!block !h-full"><img src="images/SME_LOGO.svg" alt="SME Chamber of India" class="!h-full !w-full !object-contain"></a>
         </strong>
       </div>
     </div>
-    <section class="navigation-area">
+    <section class="navigation-area !float-left !w-full">
       <div class="container">
         <div class="row-fluid">
           <!--<a href="add_your_name.php" class="btn-donate" style="padding-left: 2%;">
@@ -97,8 +97,8 @@
                 <span class="icon-bar"></span> <span class="icon-bar"></span> 
                 <span class="icon-bar"></span> </button>
                 <div class="nav-collapse collapse">
-                  <div id="navbar">
-                    <ul id="nav" style="background: linear-gradient(135deg, #0b5f7d 0%, #1e88e5 100%);">
+                  <div id="navbar" class="!relative !mx-auto !block !h-[63px] !w-full !rounded-t-[5px] !shadow-[0_0_4px_rgba(0,0,0,0.3)]">
+                    <ul id="nav" class="!mx-auto !w-full !list-none !bg-[linear-gradient(135deg,#0b5f7d_0%,#1e88e5_100%)] !p-0 !text-center">
                       <li><a href="#">About</a>
                         <ul> 
                           <li><a href="introduction">Introduction</a></li>

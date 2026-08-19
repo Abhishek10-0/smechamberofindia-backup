@@ -7,11 +7,11 @@ $(document).ready(function(){
 });
 </script>
 
-<section id="footer">
+<section id="footer" class="!float-left !w-full">
     <!-- PB Removed this from below div style="height: 690%;" -->
-    <p id="foote" style="text-align: center; background: linear-gradient(135deg, #0b5f7d 0%, #1e88e5 100%); margin-bottom: 0px; color: white;">Expand Footer +</p>
+    <p id="foote" class="!mb-0 !cursor-pointer !bg-[linear-gradient(135deg,#0b5f7d_0%,#1e88e5_100%)] !py-1 !text-center !text-white">Expand Footer +</p>
     <div class="menu" style="display: none;">
-    <div class="footer-top" style="height: 690%;" > 
+    <div class="footer-top !float-left !h-auto !w-full !bg-[#222] !px-0 !pb-2 !pt-[31px]">
         <div class="container">
             <div class="row-fluid" style="margin-left: 6%;">
                 <div class="span3">
@@ -88,7 +88,7 @@ $(document).ready(function(){
             </div>
         </div>
     </div>
-    <div class="footer-social">
+    <div class="footer-social !float-left !w-full !bg-[#333] !px-0 !pb-5 !pt-[21px]">
 	    <p align="center" style="width: 80%; padding-left: 10%; text-align: justify; color: grey;">Credits : Images used in this website by <a href="https://www.freepik.com/" target="_blank">freepik.com</a></p>
         <b style="padding-left: 45%; color: white;">Disclaimer</b>
 
@@ -104,7 +104,7 @@ $(document).ready(function(){
         <p align="center" style="width: 80%; padding-left: 10%; text-align: justify; color: grey;">The Chamber reserves the right to modify, suspend, or discontinue, temporarily or permanently, any section of the website or these disclaimers at any time without notice. Users should regularly check for updates. Your use of this website and any dispute arising from it is governed by the laws of India. The exclusive jurisdiction for all disputes shall be Mumbai, Maharashtra.</p>    
     </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright !float-left !w-full !bg-[#222] !px-0 !pb-[38px] !pt-[26px]">
         <strong class="copy">
 
             Copyright © Small and Medium Business Development Chamber of India.All Rights Reserved.<br>
