@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+/* Tailwind v4 does not automatically scan the project's PHP templates. */
+@source "../**/*.php";
