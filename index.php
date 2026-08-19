@@ -31,6 +31,13 @@
         <link type="text/css" rel="stylesheet" href="js/highlighter/shCoreDefault.css"/>
         <link type="text/css" rel="stylesheet" href="js/highlighter/shCore.css"/>
         <script src="js/html5.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/tailwind-output.css"/>
+        <style>
+          /* Tailwind's .collapse utility conflicts with Bootstrap's navbar class. */
+          #header .nav-collapse.collapse {
+            visibility: visible;
+          }
+        </style>
         <link rel="stylesheet" id="font-awesome-css" href="css/font-awesome.css" type="text/css" media="screen">
         <!-- whatsapp -->
         <meta name="facebook-domain-verification" content="znocoyp29nn8rk48ft0y3sh6bztrtk" />
