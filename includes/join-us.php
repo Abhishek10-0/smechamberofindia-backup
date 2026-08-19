@@ -7,7 +7,7 @@
         <!-- Left Column: Content -->
         <div class="w-full lg:w-1/3 lg:pr-8">
             <h4 class="text-blue-700 font-bold uppercase tracking-widest text-sm mb-2">Join Us</h4>
-            <div class="w-10 h-1 bg-blue-700 mb-6"></div>
+            <div class="mb-6 h-1 w-10 bg-[linear-gradient(135deg,#0b5f7d_0%,#1e88e5_100%)]"></div>
 
             <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
                 Resources and Opportunities for Every SME
@@ -17,7 +17,7 @@
                 Access the right tools, connections and platforms to grow your business and stay ahead in a competitive world.
             </p>
 
-            <a href="membership.php" class="inline-flex items-center gap-2 bg-[#0044d6] hover:bg-blue-800 text-white px-8 py-3.5 rounded-lg font-medium transition-colors duration-300">
+            <a href="membership.php" class="inline-flex items-center gap-2 rounded-lg bg-[linear-gradient(135deg,#0b5f7d_0%,#1e88e5_100%)] px-8 py-3.5 font-medium !text-white transition-all duration-300 hover:!text-white hover:brightness-110">
                 BECOME A MEMBER
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
