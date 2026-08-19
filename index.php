@@ -30,6 +30,7 @@
         <link rel="stylesheet" href="css/color-shortcodes.css" type="text/css">
         <link type="text/css" rel="stylesheet" href="js/highlighter/shCoreDefault.css"/>
         <link type="text/css" rel="stylesheet" href="js/highlighter/shCore.css"/>
+        <link rel="stylesheet" href="css/tailwind-output.css">
         <script src="js/html5.js" type="text/javascript"></script>
         <link rel="stylesheet" id="font-awesome-css" href="css/font-awesome.css" type="text/css" media="screen">
         <!-- whatsapp -->
@@ -434,7 +435,7 @@ src="https://www.facebook.com/tr?id=1889231752034596&ev=PageView&noscript=1"
           </div>
         </div>                   
       </div>                
-      <section class="contact-page">
+      <section class="bg-black">
         <div class="container">
           <div class="row-fluid">
             <div class="col-md-12 ">                       
