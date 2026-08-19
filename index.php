@@ -5,8 +5,6 @@
 <head>
     <?php include 'includes/meta-head.php'; ?>
 
-    <link rel="stylesheet" href="css/tailwind-output.css" />
-    
 </head>
 
 <body>

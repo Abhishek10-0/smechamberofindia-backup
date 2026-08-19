@@ -30,7 +30,8 @@
 <link type="text/css" rel="stylesheet" href="js/highlighter/shCoreDefault.css" />
 <link type="text/css" rel="stylesheet" href="js/highlighter/shCore.css" />
 <script src="js/html5.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/tailwind-output.css" />
+<?php $tailwindVersion = @filemtime(__DIR__ . '/../css/tailwind-output.css') ?: time(); ?>
+<link rel="stylesheet" href="css/tailwind-output.css?v=<?= $tailwindVersion ?>" />
 <link rel="stylesheet" id="font-awesome-css" href="css/font-awesome.css" type="text/css" media="screen">
 
 <style>
